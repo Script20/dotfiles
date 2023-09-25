@@ -1,0 +1,25 @@
+# Directories
+.config/discord
+.config/xfce4
+.config/btop
+.config/cef_user_data
+.config/dconf
+.config/gnome-boxes
+.config/BraveSoftware
+.config/gtk-3.0
+.config/libvirt
+.config/pulse
+.config/qt5ct
+.config/qt6ct
+.config/spotify
+.config/swaylock
+.config/systemd
+.config/Thunar
+.config/waybar
+.config/wlogout
+.config/wofi
+.config/yay
+
+# Files
+.config/mimeapps.list
+
