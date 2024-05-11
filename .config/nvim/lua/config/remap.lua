@@ -1,4 +1,5 @@
 vim.g.mapleader = " "
+print("remap")
 vim.keymap.set("n", "<leader>la", vim.cmd.Ex, { desc = "Netrw" })
 vim.keymap.set("n", "<leader>u", ":UndotreeShow<CR>", { desc = "Undotree GUI" })
 
