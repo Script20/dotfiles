@@ -3,14 +3,12 @@ return {
 	config = function()
 		local builtin = require('telescope.builtin')
 
-		vim.keymap.set('n', '<leader>ff', builtin.find_files, {}, { desc = "File file" })
-		vim.keymap.set('n', '<C-p>', builtin.git_files, {}, { desc = "Git files" })
-		vim.keymap.set('n', '<leader>fs', function()
-			builtin.grep_string({ search = vim.fn.input("Grep > ") })
-		end, { desc = "Grep search" })
-		vim.keymap.set('n', '<leader>vh', builtin.help_tags, {}, { desc = "Help tags" })
+        local wk = require("which-key")
+        wk.add({
+            { "<leader>ff", builtin.find_files, desc = "Find Files", mode = "n" },
+            { "<leader>gf", builtin.git_files, desc = "Git Files", mode = "n" },
+            { "<leader>fs", function() builtin.grep_string({ search = vim.fn.input("Grep > ") }) end, desc = "Grep Search", mode = "n" },
+            { "<leader>vh", builtin.help_tags, desc = "help Tags", mode = "n" },
+        })
 	end,
 }
-
-
-

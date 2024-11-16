@@ -1,12 +1,12 @@
 return {
 	{
-		"nvim-treesitter/nvim-treesitter", 
+		"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate",
 		config = function()
-			require("nvim-treesitter").setup()			
+			require("nvim-treesitter").setup()
 		end,
 		opts = {
-			ensure_installed = { 
+			ensure_installed = {
 				"vimdoc", "java", "javascript", "cpp", "rust",
 				"jsdoc", "c"
 			},
