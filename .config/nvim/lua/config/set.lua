@@ -13,7 +13,8 @@ vim.opt.wrap = false
 
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = "C:\\Users\\Script\\AppData\\Local\\nvim\\Undotree"
+vim.opt.undodir = "C:\\Users\\Script\\AppData\\Local\\nvim\\Undotree" -- Windows
+--vim.opt.undodir = "~/.config/nvim" -- Linux
 vim.opt.undofile = true
 
 vim.opt.hlsearch = false
